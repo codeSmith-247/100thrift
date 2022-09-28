@@ -1,0 +1,74 @@
+<link rel = 'stylesheet' href = '<?php echo $navigation_style; ?>'>
+<link rel = 'stylesheet' href = '<?php echo $navigation_style_desktop; ?>'>
+<script src = '<?php echo $navigation_script; ?>'></script>
+
+<nav>
+    <div class = 'top-navigation flex-row flex-between p-1'>
+        <div class = 'menu-btn mobile flex-center' onclick = 'menu();'>
+            <i class = 'bi bi-list'></i>
+            <i class = 'bi bi-x-lg'></i>
+        </div>
+
+        <div class = 'desktop-menu desktop full-h flex-row'>
+            <div class = 'menu-itm full-h flex-center flex-col' onmouseenter='preview_menu(".menu-itm-preview.one");' onmouseleave='colapse_menu(".menu-itm-preview.one");' >
+                <span>Shop</span>
+                <div class = 'underline'></div>
+            </div>
+
+            <div class = 'menu-itm full-h flex-center flex-col' onmouseenter='preview_menu(".menu-itm-preview.two");' onmouseleave='colapse_menu(".menu-itm-preview.two");'>
+                <span>Iconics</span>
+                <div class = 'underline'></div>
+            </div>
+
+            <div class = 'menu-itm full-h flex-center flex-col' onmouseenter='preview_menu(".menu-itm-preview.three");' onmouseleave='colapse_menu(".menu-itm-preview.three");'>
+                <span>Collections</span>
+                <div class = 'underline'></div>
+            </div>
+
+            <div class = 'menu-itm full-h flex-center flex-col' onmouseenter='preview_menu(".menu-itm-preview.four");' onmouseleave='colapse_menu(".menu-itm-preview.four");'>
+                <span>Brands</span>
+                <div class = 'underline'></div>
+            </div>
+        </div>
+
+        <div class = 'logo'>100 THREIFT</div>
+
+        <div class = 'desktop-menu desktop full-h flex-row'>
+            <div class = 'menu-itm full-h flex-center flex-col' onclick = 'search();'>
+                <span>Search</span>
+                <div class = 'underline'></div>
+            </div>
+
+            <div class = 'menu-itm full-h flex-center flex-col'>
+                <span>Account</span>
+                <div class = 'underline'></div>
+            </div>
+
+            <div class = 'menu-itm full-h flex-center flex-col' onclick = 'cart();'>
+                <span>Bag: 23</span>
+                <div class = 'underline'></div>
+            </div>
+
+            <div class = 'menu-itm full-h flex-center flex-col'>
+                <span>Checkout</span>
+                <div class = 'underline'></div>
+            </div>
+        </div>
+
+        <div class = 'cart mobile p-rel' onclick = 'cart();'>
+            <i class = 'bi bi-bag'></i>
+            <span class = 'p-abs flex-center'>0</span>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<div class = 'overlay p-fix top-left full-vhw'></div>

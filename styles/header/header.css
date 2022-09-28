@@ -1,0 +1,68 @@
+header .cta {
+    color: var(--primary-color);
+    width: 60%;
+}
+
+header .cta h2 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    font-weight: 900;
+    line-height: 1;
+}
+
+.image-box .img-overlay {
+    background: #00000080;
+}
+
+header .cta-btn {
+    margin: 1.5rem 0;
+}
+
+header .cta-btn .btn {
+    background: #11111156;
+    border: 1px solid var(--primary-color);
+    border-radius: 5rem;
+    padding: .8rem 4rem;
+    width: max-content;
+
+}
+
+header .cta-btn .btn:hover {
+    background: var(--primary-color);
+    color: #111;
+}
+
+header .slide {
+    opacity: 0;
+}
+
+header .slide.active {
+    opacity: 1;
+}
+
+
+@media (max-width: 956px) {
+    header .cta {
+        width: 80%;
+    }
+}
+
+@media (max-width: 710px) {
+    header .cta {
+        width: 95%;
+    }
+}
+
+@media (max-width: 590px) {
+    header .cta h2 {
+        font-size: 200%;
+        font-weight: 800;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 400px) {
+    header .cta h2 {
+        font-weight: 300;
+        line-height: 1.4;
+    }
+}
