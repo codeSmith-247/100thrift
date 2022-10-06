@@ -1,0 +1,43 @@
+
+/* section.middle_two {
+} */
+
+
+
+.middle_two > * {
+    border-radius: .5rem;
+    transform: scale(.98);
+    height: 500px;
+
+}
+
+.middle_two .text-overlay {
+    background: #22222275;
+    color: var(--primary-color);
+}
+
+.middle_two .btn {
+    background: #22222275;
+    border: 1px solid var(--primary-color);
+    border-radius: 5rem;
+    padding: .65rem 1rem;
+    margin: .7rem 0;
+    width: max-content;
+}
+
+@media (max-width: 700px) {
+    .middle_two {
+        flex-direction: column;
+    }
+
+    .middle_two > * {
+        width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .middle_two p {
+        font-size: 75%;
+    }
+}
