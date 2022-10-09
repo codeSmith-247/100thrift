@@ -52,3 +52,4 @@ function self_deactivate(self, class_name = 'active') {
 function self_toggle(self, class_name = 'active') {
     self.classList.toggle(class_name);
 }
+

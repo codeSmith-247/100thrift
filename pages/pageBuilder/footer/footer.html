@@ -1,0 +1,24 @@
+<link rel = 'stylesheet' href = '<?php echo $footer_style; ?>'>
+<script src = '<?php echo $footer_script; ?>' defer></script>
+<footer class = 'flex-wrap flex-between'>
+    <div class = 'footer-input'>
+        <div class = 'input flex-row'>
+            <input name = 'email' type = 'email' placeholder = 'Email'>
+            <div class = 'input-btn'>Subscribe</div>
+        </div>
+    </div>
+
+    <div class = 'link-container flex-row flex-between'>
+        <?php for($i = 5; $i >= 0; $i--): ?>
+        <div class = 'links'>
+            <div class = 'title' onclick = 'link_toggle(this);'>Accounts</div> 
+            <div class = 'link-box'>
+                <div class = 'link'>Home Link</div>
+                <div class = 'link'>Home Link</div>
+                <div class = 'link'>Home Link</div>
+                <div class = 'link'>Home Link</div>
+            </div>
+        </div>
+        <?php endfor; ?>
+    </div>
+</footer>

@@ -1,0 +1,26 @@
+<link rel = 'stylesheet' href = '<?php echo $scroll_style; ?>'>
+<script src = '<?php echo $scroll_script; ?>' defer></script>
+
+<section class = 'product-section p-rel'>
+    <div class = 'product-scroll'>
+        <div class = 'products flex-row '>
+            <?php 
+                for($i = 0; $i < 10; $i++) {
+                    product_card();
+                }
+            ?>
+        </div>
+    </div>
+
+    <div class = 'left-btn scroll-btn p-abs flex-center p-1'>
+        <div class = 'left-scroll flex-center scroll round' onclick = 'horizontal_scroll(".product-scroll", true);'>
+            <i class = 'bi bi-chevron-left'></i>
+        </div>
+    </div>
+
+    <div class = 'right-btn scroll-btn p-abs flex-center p-1'>
+        <div class = 'right-scroll flex-center scroll round' onclick = 'horizontal_scroll(".product-scroll", false);'>
+            <i class = 'bi bi-chevron-right'></i>
+        </div>
+    </div>
+</section>

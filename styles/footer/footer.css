@@ -1,0 +1,99 @@
+
+footer {
+    background: var(--secondary-color);
+    padding: 4rem 2rem;
+}
+
+footer .input {
+    height: max-content;
+    width: max-content;
+}
+
+footer input {
+    border: none;
+
+    outline: none;
+    padding: .85rem;
+
+    width: 320px;
+    margin: 0 1.25rem;
+
+    font-size: 100%;
+}
+
+footer .input-btn{
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    padding: .8rem .85rem;
+
+}
+
+.link-container {
+    width: 60%;
+}
+
+.links {
+    padding: 0 1rem;
+    font-size: 90%;
+}
+
+.links .title {
+    font-weight: bolder;
+    text-transform: underline;
+    padding-bottom: .25rem;
+
+}
+
+.links .link {
+    padding: .15rem 0;
+    color: #444;
+    font-size: 90%;
+    white-space: nowrap;
+}
+
+.links .link:hover {
+    color: #111;
+}
+
+@media (max-width: 1200px) {
+    .wrapper footer {
+        padding: 2rem 1rem;
+    }
+
+    .link-container {
+        padding: 2rem 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 755px) {
+    .link-container {
+        display: block;
+    }
+
+    .links .title {
+        border-bottom: 1px solid #999999;
+        padding: .85rem 0;
+    }
+
+    .link-box {
+        display: none;
+    }
+
+    .link-box.active {
+        display: block;
+        padding: .75rem 0;
+    }
+
+    .link-container links .link{
+        padding: .21rem 0;
+    }
+}
+
+@media (max-width: 500px) {
+    footer input {
+        width: 60vw;
+        margin: 0 .2rem;
+    }
+}

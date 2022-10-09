@@ -2,6 +2,11 @@ nav .top-navigation {
     background: var(--primary-color);
 }
 
+nav .logo .img {
+    height: 45px;
+    width: 67px;
+}
+
 nav .menu-btn .bi-list {
     transform: scaleX(1.3);
 }
@@ -15,9 +20,10 @@ nav .menu-btn.active .bi-x-lg {
     display: block;
 }
 
+
+
 nav .cart span {
     background: var(--secondary-color);
-    border-radius: 100%;
     top: -1px;
     right: -7px;
     width: 15px;
@@ -183,7 +189,6 @@ nav .cart span {
 
 .checkout-btn {
     background: #333333;
-    border-radius: 2rem;
     color: #ffffff;
     padding: .75rem 2rem;
     font-size: 80%;

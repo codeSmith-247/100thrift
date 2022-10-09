@@ -20,7 +20,6 @@ header .cta-btn {
 header .cta-btn .btn {
     background: #11111156;
     border: 1px solid var(--primary-color);
-    border-radius: 5rem;
     padding: .8rem 4rem;
     width: max-content;
 

@@ -12,8 +12,16 @@ $handler['home'] = function() {
     require_once 'pages/home/index.php';
 };
 
+$handler['shop'] = function() {
+    global $root;
+    require_once 'pages/shop/index.php';
+};
+
 $router = [
     '' => $handler['home'],
+    '/shop' => $handler['shop'],
 ];
 
+if(isset($router[$request_url])) 
 $router[$request_url]();
+else $router['']();
