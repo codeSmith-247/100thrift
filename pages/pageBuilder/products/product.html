@@ -2,6 +2,62 @@
 <link rel = 'stylesheet' href = 'styles/products/product_box.css'>
 
 <section class = 'products'>
+    <div class = 'filter-box flex-row'>
+        <div class = 'search-box flex-row flex-between'>
+            <div class = 'search flex-row full-hw'>
+                <input type = 'text' name = 'search' placeholder = 'Search for a particular product' class = 'full-h'>
+                <div class = 'search-btn full-h flex-center'>
+                    <i class = 'bi bi-search'></i>
+                </div>
+            </div>
+
+            <div class = 'filter-btn flex-center full-h p-rel ' style = 'width: 5%;'>
+                <i class = 'bi bi-sliders'></i>
+
+                <div class = 'filter-panel p-abs'>
+                    <div class = 'panel'>
+                        <div class = 'panel-item'>
+                            <select>
+                                <option selected>High price to Low price</option>
+                                <option>Low price to High price</option>
+                            </select>
+                        </div>
+
+                        <div class = 'price-filter panel-item'>
+                            <div class = 'top flex-row flex-between'>
+                                <div class = 'flex-col'>
+                                    <span>Min</span>
+                                    <input type = 'text' name = 'min_price'>
+                                </div>
+                                <div class = 'separator'>--</div>
+
+                                <div class = 'flex-col'>
+                                    <span>Max</span>
+                                    <input type = 'text' name = 'max_price'>
+                                </div>
+                            </div>
+                            <div class = 'bottom flex-center'>
+                                <div class = 'parent-bar p-rel'>
+
+                                    <div class = 'left-space space  full-hw'>
+                                        <div class = 'inner-bar full-hw'></div>
+                                    </div>
+
+                                    <div class = 'left-btn round-btn p-abs'></div>
+
+                                    <div class = 'right-space space full-hw'>
+                                        <div class = 'inner-bar full-hw'></div>
+                                    </div>
+
+                                    <div class = 'right-btn round-btn p-abs'></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class = 'product-box'>
         <?php 
             for($i = 0; $i <= 32; $i++) {
@@ -9,5 +65,5 @@
             }
         ?>
     </div>
-
 </section>
+

@@ -1,8 +1,8 @@
 <?php
 
-    function product_card($name = "A very long Product Name", $price = "2000", $image = "product_000000.jpg", $status = "In Stock") {
+    function product_card($name = "A very long Product Name", $price = "2000", $image = "product_000000.jpg", $status = "In Stock", $product_id = '') {
         echo "
-        <div class = 'product ov-hidden'>
+        <div class = 'product ov-hidden' product_id = '$product_id'>
             <div class = 'img'>
                 <img src = 'images/$image' class = 'obj-fit'>
             </div>

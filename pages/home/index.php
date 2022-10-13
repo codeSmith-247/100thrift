@@ -4,6 +4,7 @@ require_once $root . 'pages/pageBuilder/builder.php';
 
 $homePage = new PageBuilder();
 
+$homePage->loader();
 $homePage->navigation();
 $homePage->header();
 $homePage->middle_two();
